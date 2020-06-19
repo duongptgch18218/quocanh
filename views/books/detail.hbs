@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styleDetail.css">
+</head>
+
+<body>
+    <div class="abc">
+        <h1 id="det">Detail</h1>
+        <h1 id="upd">Update</h1>
+        <div class="container">
+            <form action="doUpdate" method="POST">
+                <input type="hidden" name="id" value="{{book._id}}">
+                <p>Book ID : <span>{{book.bookid}}</span><input type="text" name="bookid" id="bookid"
+                        value="{{book.bookid}}">
+                </p>
+                <p>Book Name : <span>{{book.name}}</span><input type="text" name="name" id="name" value="{{book.name}}">
+                </p>
+                <p>Genre: <span>{{book.genre}}</span><input type="text" name="genre" id="genre" value="{{book.genre}}">
+                </p>
+                <p>Author: <span>{{book.author}}</span><input type="text" name="author" id="author"
+                        value="{{book.author}}">
+                </p>
+                <p>Amount: <span>{{book.amount}}</span><input type="text" name="amount" id="amount"
+                        value="{{book.amount}}">
+                </p>
+                <p><input type="submit" id="btn3" value="Update"></p>
+            </form>
+            <div class="div2">
+                <span><input type="button" id="btn" value="Edit"></span>
+                <form action="delete" method="POST">
+                    <input type="hidden" name="id" value="{{book._id}}">
+                    <span><input type="submit" id="btn2" value="Delete"></span>
+                </form>
+                <form action="Library" method="GET">
+                    <span><input type="submit" id="btn4" value="Back"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/detail.js"></script>
+</html>

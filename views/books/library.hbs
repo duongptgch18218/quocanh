@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styleLibrary.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="icon"><a href="/"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+    <h1>List of Books</h1>
+    <table class="styleTable">
+        <tr>
+            <th>ID</th>
+            <th>Book</th>
+            <th>Genre</th>
+            <th>Author</th>
+            <th>Amount</th>
+            <th></th>
+        </tr>
+        {{# each books}}
+        <tr>
+            <td>{{bookid}}</td>
+            <td>{{name}}</td>
+            <td>{{genre}}</td>
+            <td>{{author}}</td>
+            <td>{{amount}}</td>
+            <td class="btn"><a href="/books/detail?id={{_id}}">More detail</a></td>
+        </tr>  
+        {{/each}}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="btn"><a href="/books/insert">Add Book</a></td>
+        </tr>
+    </table>
+</body>
+</html>

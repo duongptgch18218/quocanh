@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styleInsert.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <form action="doInsert" method="POST">
+        <div>
+            
+            <h1><div class="icon"><a href="/books/library"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>Adding Book</h1>
+        </div>
+        <div class="flex">
+            <p><span>Book ID:</span> <input type="text" name="bookid" id="bookid"></p>
+            <p><span>Book Name:</span> <input type="text" name="name" id="name"></p>
+            <p><span>Genre:</span> <input type="text" name="genre" id="genre"></p>
+            <p><span>Author:</span> <input type="text" name="author" id="author"></p>
+            <p><span>Amount:</span> <input type="text" name="amount" id="amount"></p>
+            <p><input type="submit" id="btn" value="Add"></p>
+        </div>
+    </form>
+</body>
+    <script src="/js/insert.js"></script>
+</html>

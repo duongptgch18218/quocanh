@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #c8d6e5;
+}
+
+.styleTable {
+    border: none;
+    width: 100%;
+}
+
+.styleTable th {
+    background-color: #8395a7;
+    padding: 5px;
+}
+
+.styleTable td {
+    background-color: #f0e7da;
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #10ac84;
+}
+
+.icon {
+    font-size: 25px;
+    position: absolute;
+    left: 10px;
+}
+
+.btn:hover a {
+    color: white;
+}
+
+a:visited {
+    color: #10ac84;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
